@@ -15,16 +15,10 @@ namespace AgileConfig.Server.Apisite.Filters
         {
             if (!context.ModelState.IsValid)
             {
-                var errMsg = new StringBuilder();
-                foreach (var item in context.ModelState.Values)
+                var arrMsg = context.ModelState.Values.SelectMany(s => s.Errors).Select(s => s.ErrorMessage).Distinct().ToArray();
+                var errMsg = string.Join(";", arrMsg);
+                context.Result = new JsonResult(new
                 {
-                    foreach (var error in item.Errors)
-                    {
-                        errMsg.Append(error.ErrorMessage + ";");
-                    }
-                }
-
-                context.Result = new JsonResult(new {
                     success = false,
                     message = errMsg.ToString()
                 });
