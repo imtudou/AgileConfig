@@ -8,7 +8,7 @@ namespace AgileConfig.Server.Data.Entity
     /// <summary>
     /// app继承关系
     /// </summary>
-    [Table(Name = "agc_appInheritanced")]
+    [Table(Name = "agc_appinheritanced")]
     public class AppInheritanced
     {
         [Column(Name = "id", StringLength = 36)]

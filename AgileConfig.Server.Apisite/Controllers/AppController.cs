@@ -65,9 +65,7 @@ namespace AgileConfig.Server.Apisite.Controllers
                     Enabled = item.Enabled,
                     UpdateTime = item.UpdateTime,
                     CreateTime = item.CreateTime,
-                    inheritancedApps = item.Type == AppType.Inheritance ? 
-                                                                            new List<string>() : 
-                                                                            (inheritancedApps).Select(ia => ia.Id).ToList(),
+                    inheritancedApps = item.Type == AppType.Inheritance ?  new List<string>() : (inheritancedApps).Select(ia => ia.Id).ToList(),
                     inheritancedAppNames = item.Type == AppType.Inheritance ?
                                                                             new List<string>() :
                                                                             (inheritancedApps).Select(ia => ia.Name).ToList(),

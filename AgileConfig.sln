@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgileConfig.Server.Data.Fre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgileConfig.Server.ServiceTests", "AgileConfig.Server.ServiceTests\AgileConfig.Server.ServiceTests.csproj", "{8CE2DB53-3A35-4991-A419-0EC12B001F59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileConfig.Server.CommonTests", "AgileConfig.Server.CommonTests\AgileConfig.Server.CommonTests.csproj", "{70724B0E-7D81-412C-BDA7-747F4845E990}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgileConfig.Server.CommonTests", "AgileConfig.Server.CommonTests\AgileConfig.Server.CommonTests.csproj", "{70724B0E-7D81-412C-BDA7-747F4845E990}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
